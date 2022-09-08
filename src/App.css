@@ -1,3 +1,18 @@
+body{
+  background-image: url(https://cdn.glitch.global/d6554436-3222-4d18-9b12-7905b818648a/backWhhite.jpg?v=1644416915601);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+
+input{
+  padding: 20px;
+  width: 40%;
+  font-size: 16px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .crossed {
   background: #8fd9a8;
@@ -13,13 +28,6 @@ ul, li {
   list-style-type: none;
 }
 
-body{
-  background-image: url(https://cdn.glitch.global/d6554436-3222-4d18-9b12-7905b818648a/backWhhite.jpg?v=1644416915601);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-}
 .header, .container{
   display: flex;
   justify-content: center;
@@ -36,12 +44,7 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-input{
-  padding: 30px;
-  width: 40%;
-  font-size: 16px;
-  border: none;
-}
+
 .added{
   display: flex;
   justify-content: center;
@@ -55,18 +58,18 @@ input{
   font-size: 20px;
   border-bottom: 1px solid #cdc7be;
   border-radius: 10px;
-  padding: 3px;
-  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button{
   background: #8fd9a8;
-  color: #000000;
+  color: #0b4a1a;
   transition: all 2s ease;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   font-size: 15px;
   font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #particles-js {
@@ -77,6 +80,10 @@ z-index: -1;
 }
 
 @media all and (max-width: 800px){
+  
+  input{
+    width: 86%;
+  }
   .container{
   flex-direction: column;
   height: 100%;
@@ -85,9 +92,9 @@ z-index: -1;
   .item{
       display: flex;
   }
-.input{
-  width: 100%;
-}
+ .added{
+  width: 86%;
+ }
   h1{
       size: 25px;
   }
@@ -97,6 +104,11 @@ z-index: -1;
   h1{
       font-size: 10px;
   }
+  input {
+    width: 90%;
+    margin: 10px;
+      }
+
   .container{
       flex-direction: column;
       height: 100vh;
